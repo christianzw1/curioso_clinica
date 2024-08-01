@@ -16,7 +16,7 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 800px;
+            max-width: 100%;
             margin: 0 auto;
             padding: 20px;
             background-color: white;
@@ -27,7 +27,7 @@
             text-align: center;
         }
         .logo {
-            max-width: 300px;
+            max-width: 100%;
             height: auto;
         }
         h1 {
@@ -48,16 +48,15 @@
         }
         .services-list {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            flex-direction: column;
             gap: 20px;
             margin-bottom: 30px;
         }
         .service-item {
             display: flex;
             align-items: center;
-            width: 45%;
             justify-content: center;
+            width: 100%;
         }
         .service-icon {
             margin-right: 10px;
@@ -115,6 +114,17 @@
             color: #3498db;
             transform: scale(1.1);
         }
+
+        @media (min-width: 768px) {
+            .services-list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .service-item {
+                width: 45%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -160,16 +170,13 @@
 
         <h2 class="benefits-title">Por que Escolher Nossa Clínica?</h2>
         <ul class="benefits-list">
-            <li>Equipe de especialistas altamente qualificados</li>
-            <li>Tecnologia de ponta para diagnósticos precisos e tratamentos eficazes</li>
-            <li>Ambiente acolhedor e confortável para reduzir a ansiedade</li>
             <li>Atendimento personalizado focado nas suas necessidades únicas</li>
             <li>Resultados comprovados e sorrisos transformados</li>
         </ul>
 
         <div class="cta-section">
             <p class="cta-text">Não deixe para amanhã o sorriso que você pode ter hoje!</p>
-            <a href="https://api.whatsapp.com/send?phone=551198817299&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.%20Poderia%20me%20ajudar?" class="cta-button">Agende sua Consulta</a>
+            <a href="https://api.whatsapp.com/send?phone=5511988172990&text=Ol%C3%A1!%20Eu%20gostaria%20de%20fazer%20uma%20consulta.%20Poderia%20me%20ajudar?" class="cta-button">Agende sua Consulta</a>
             <p style="margin-top: 15px; font-size: 16px;">Vagas limitadas - Aproveite esta oportunidade!</p>
         </div>
 
@@ -177,7 +184,7 @@
             <a href="https://www.instagram.com/odon.toconfort/" target="_blank" class="social-icon">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?phone=551198817299&text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta.%20Poderia%20me%20ajudar?" target="_blank" class="social-icon">
+            <a href="https://api.whatsapp.com/send?phone=5511988172990&text=Ol%C3%A1!%20Eu%20gostaria%20de%20fazer%20uma%20consulta.%20Poderia%20me%20ajudar?" target="_blank" class="social-icon">
                 <i class="fab fa-whatsapp"></i>
             </a>
         </div>
